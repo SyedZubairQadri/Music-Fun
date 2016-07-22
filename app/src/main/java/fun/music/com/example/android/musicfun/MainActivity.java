@@ -27,7 +27,9 @@ public class MainActivity extends Activity {
 
                 player.start();
 
+
             }
+
 
         });
         Button button2=(Button)findViewById(R.id.button2);
@@ -35,14 +37,26 @@ public class MainActivity extends Activity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this,"Stoped ",Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this,"Paused ",Toast.LENGTH_SHORT).show();
 
                 player.pause();
 
             }
 
         });
+        Button button3=(Button)findViewById(R.id.button3);
 
-    }
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this,"Play again ",Toast.LENGTH_SHORT).show();
 
-}
+                player.isLooping();
+
+
+            }
+
+        });
+
+
+    }}

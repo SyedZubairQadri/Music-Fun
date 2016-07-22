@@ -18,16 +18,30 @@
     android:layout_gravity="fill_vertical"
     android:scaleType="fitEnd"
     android:layout_weight="0.98" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="PLAY"
-        android:id="@+id/button"/>
+        android:id="@+id/button" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button2"
-        android:text="PAUSE" />
+        android:text="PAUSE"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3"
+            android:text="Stop"/>
+
+    </LinearLayout>
 </LinearLayout>
